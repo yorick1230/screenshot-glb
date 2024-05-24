@@ -39,7 +39,7 @@ export async function renderScreenshot({
     modelViewerArgs,
   });
   await page.setContent(data, {
-    waitUntil: ['domcontentloaded', 'networkidle0'],
+    waitUntil: ['domcontentloaded'],
   });
 
   const contentT1 = performance.now();
